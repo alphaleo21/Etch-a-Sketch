@@ -18,9 +18,11 @@
         </div>
         <div id="container"></div>
         <button onclick="changeColor()">Color</button>
-        <input type="range" value="16" id="range" min="2" max="100" oninput="changeSize(this.value)">
-        <button onclick="clear()">Clear</button>
+        <input type="range" value="16" id="range" min="2" max="100">
+        <button onclick="changeSize(range.value)">Create</button>
+        <button onclick="removeClear()">Clear</button>
     </section>
     </body>
     <script src="jss.js"></script>
+    
 </html>

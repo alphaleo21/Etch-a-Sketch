@@ -1,8 +1,8 @@
 const container = document.querySelector('#container');
-let count = 0;
+
 
 function gridCreation(e){
-    if(count<1){
+    container.innerHTML = ''; 
         for(let j =0;j<e;j++){
             const row = document.createElement('div');
             row.classList.add('row');
@@ -15,28 +15,21 @@ function gridCreation(e){
                 row.appendChild(grid);
             }
             container.appendChild(row);
+        
         }
-        count++;
-    }else if(count == 1){
-        const row = document.querySelectorAll(".row")
-        const grid = document.querySelectorAll(".grid")
-        row.clear;
-        grid.clear;
-        count = 0;
-        console.log("hello")
     }
-    
-}
-
 const color = document.getElementById('color');
 const bgColor = document.getElementById('bgcolor');
 
-function clear(){
-    
+function removeClear(){
+    container.innerHTML = ''; // Clear the container
 }
 
 function changeColor(){
     return color.value
+}
+function changeBgColor(){
+    container.style.backgroundColor = bgColor.value;
 }
 
 function changeSize(input){
