@@ -26,18 +26,20 @@ section{
 
 .colors{
     display: flex;
-    flex: 1 1 auto;
+    
 }
-input{
-    margin: rem;
+button, input{
+    margin: .5em;
+    font-weight: bold;
 }
+
 #container{
     background-color: hwb(240 96% 3%);
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
     border: .5px solid black;
 
 }

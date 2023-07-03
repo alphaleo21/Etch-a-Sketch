@@ -12,12 +12,13 @@
     <section>
         <div class="colors">
             <input type="color" id="color">
-            
+            <button onclick="changeColor()">Color</button>
             <input type="color" id="bgcolor">
             <button onclick="changeBgColor()">BGcolor</button>
+            
         </div>
         <div id="container"></div>
-        <button onclick="changeColor()">Color</button>
+        Size
         <input type="range" value="16" id="range" min="2" max="100">
         <button onclick="changeSize(range.value)">Create</button>
         <button onclick="removeClear()">Clear</button>
